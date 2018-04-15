@@ -6,11 +6,19 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 
+<<<<<<< HEAD
 namespace WindowsFormsApplication2
 {
     class BaseDateTest
     {
         private static string constr = "server=.;database=UPRESSURE;uid=sa;pwd=sakjdx";
+=======
+namespace WindowsFormsApplication1
+{
+    class BaseDateTest
+    {
+        private static string constr = "server=.;database=UPRESSURE;uid=sa;pwd=sdkjdx";
+>>>>>>> 017289e2c4b48abce7f96f7cf593d97165127265
         //模板excel文件
         private Workbook workBook;
         //模板工作sheet
@@ -25,10 +33,17 @@ namespace WindowsFormsApplication2
         
 
         public BaseDateTest() { }
+<<<<<<< HEAD
         public void Start(GetTime gt) {
 
             OpenExcel();
             string sqlquary = string.Format(@"SELECT * FROM 基本数据表 WHERE 日期='{0}'", gt.getDateToday()); // 替换成 new GetTime().getDateToday()
+=======
+        public void Start() {
+
+            OpenExcel();
+            string sqlquary = string.Format(@"SELECT * FROM 基本数据表 WHERE 日期='{0}'", "2018-03-01"); // 替换成 new GetTime().getDateToday()
+>>>>>>> 017289e2c4b48abce7f96f7cf593d97165127265
             DataTable datatable = GetDataTable(sqlquary);
             ToExcel(datatable);
             workBook_excel.Save(excelFilePath, SaveFormat.Xlsx);

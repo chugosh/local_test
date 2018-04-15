@@ -8,7 +8,11 @@ using Excel = Aspose.Cells;
 /*
     1443955916@qq.com
 */
+<<<<<<< HEAD
 namespace WindowsFormsApplication2
+=======
+namespace WindowsFormsApplication1
+>>>>>>> 017289e2c4b48abce7f96f7cf593d97165127265
 {
     //单例模式
     class CreateExcelTest
@@ -17,9 +21,14 @@ namespace WindowsFormsApplication2
         Worksheet workSheet_excel;
         private static CreateExcelTest createExcel;
         static string today = new GetTime().getDateToday();
+<<<<<<< HEAD
         //string excelFilePath = @"C:\Users\14439\Desktop\yingpanhao\报表\"
         //                        + string.Format("Excel_{0}.xlsx", DateTime.Now.ToString("yyyy-MM-dd"));//getTime();
         string excelFilePath = @"C:\Users\han\Desktop\报表\" + string.Format("Excel_{0}.xlsx", DateTime.Now.ToString("yyyy-MM-dd"));//getTime();
+=======
+        string excelFilePath = @"C:\Users\14439\Desktop\yingpanhao\报表\"
+                                + string.Format("Excel_{0}.xlsx", DateTime.Now.ToString("yyyy-MM-dd"));//getTime();
+>>>>>>> 017289e2c4b48abce7f96f7cf593d97165127265
         string filepath = @"..\..\modelFile\报表头.xlsx";
         
         private CreateExcelTest()
